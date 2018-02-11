@@ -20,6 +20,7 @@ import * as kf from './keyframes';
       transition('* => slideOutLeft', animate(1000, keyframes(kf.slideOutLeft))),
       transition('* => rotateOutUpRight', animate(1000, keyframes(kf.rotateOutUpRight))),
       transition('* => flipOutY', animate(1000, keyframes(kf.flipOutY))),
+      transition('* => zoomInUp', animate(1000, keyframes(kf.zoomInUp)))
     ])
   ]
 })

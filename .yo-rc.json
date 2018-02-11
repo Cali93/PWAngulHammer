@@ -1,0 +1,35 @@
+{
+  "generator-ngx-rocket": {
+    "version": "3.2.1",
+    "props": {
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "material",
+      "layout": "side-menu",
+      "auth": false,
+      "appName": "PWAngulHammer",
+      "projectName": "pw-angul-hammer",
+      "packageManager": "npm",
+      "mobile": []
+    }
+  },
+  "generator-addon-firebase": {
+    "version": "1.1.0",
+    "props": {
+      "firebaseDeploy": false,
+      "appName": "PWAngulHammer",
+      "projectName": "pw-angul-hammer",
+      "packageManager": "npm",
+      "target": [
+        "web"
+      ],
+      "pwa": true,
+      "ui": "material",
+      "layout": "side-menu",
+      "auth": false,
+      "mobile": []
+    }
+  }
+}

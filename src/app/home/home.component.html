@@ -17,9 +17,15 @@
       </mat-card-subtitle>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button (tap)="startAnimation('wobble')">
+      <button mat-raised-button color="primary" (tap)="startAnimation('wobble')">
         WOBBLE
       </button>
+
+      <button mat-raised-button color="primary" (tap)="startAnimation('swing')">
+        SWING
+      </button>
+
+      <button appHammertime mat-raised-button color="accent" (doubleTap)="startAnimation('jello')">JELLO (doubleTap) </button>
     </mat-card-actions>
   </mat-card>
 </div>

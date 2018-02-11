@@ -13,7 +13,7 @@ import * as kf from './keyframes';
   styleUrls: ['./home.component.scss'],
   animations: [
     trigger('cardAnimator', [
-      transition('* => wobble', animate(100, keyframes(kf.wobble))),
+      transition('* => wobble', animate(1000, keyframes(kf.wobble))),
       transition('* => swing', animate(1000, keyframes(kf.swing))),
       transition('* => jello', animate(1000, keyframes(kf.jello))),
       transition('* => zoomOutRight', animate(1000, keyframes(kf.zoomOutRight))),
@@ -24,7 +24,6 @@ import * as kf from './keyframes';
   ]
 })
 export class HomeComponent implements OnInit {
-
   animationState: string;
   quote: string;
   isLoading: boolean;
@@ -38,9 +37,9 @@ export class HomeComponent implements OnInit {
       .subscribe((quote: string) => { this.quote = quote; });
   }
 
-  startAnimation(state) {
-    console.log(state)
-    if (!this.animationState){
+  startAnimation(state: any) {
+    console.log(state);
+    if (!this.animationState) {
       this.animationState = state;
     }
   }
